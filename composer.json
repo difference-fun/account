@@ -1,7 +1,7 @@
 {
     "name" : "difference_fun/account",
     "description" : "difference_fun/account see https://difference.fun for detailed usage",
-    "type" : "library",
+    "type" : "package",
     "keywords" : ["node", "difference", "fun", "library", "framework", "account", "difference.fun"],
     "homepage": "https://difference.fun",
     "require" : {
