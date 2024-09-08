@@ -22,8 +22,8 @@ class Cli extends Controller {
     const DIR = __DIR__ . '/';
     const MODULE_INFO = 'Info';
     const INFO = [
-        '{{binary()}} r3m_io/account                 | Account options',
-        '{{binary()}} r3m_io/account setup           | Setup Accounts',
+        '{{binary()}} difference_fun/account                 | Account options',
+        '{{binary()}} difference_fun/account setup           | Setup Accounts',
     ];
 
     /**

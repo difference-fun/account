@@ -45,7 +45,7 @@
             },
             "output": {
                 "filter": [
-                    "Package:R3m:Io:Account:Output:Filter:Role:permission"
+                    "Package:Difference:Fun:Account:Output:Filter:Role:permission"
                 ]
             },
             "where": "",

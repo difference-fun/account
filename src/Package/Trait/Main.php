@@ -38,9 +38,9 @@ trait Main
             $object->config('extension.json')
         ;
         $url_default = $object->config('project.dir.package') .
-            'R3m' .
+            'Difference' .
             $object->config('ds') .
-            'Io' .
+            'Fun' .
             $object->config('ds') .
             'Account' .
             $object->config('ds') .
@@ -220,7 +220,7 @@ trait Main
                 //create private key
                 //create certificate
                 $command = Core::binary($object) .
-                    ' r3m_io/basic' .
+                    ' difference_fun/basic' .
                     ' openssl' .
                     ' init' .
                     ' -keyout=' . 'Token_key.pem' .
@@ -253,7 +253,7 @@ trait Main
             $options->token->expires_at = '+9 hours';
         }
         if (!property_exists($options->token, 'issued_by')) {
-            $options->token->issued_by = 'R3m.io';
+            $options->token->issued_by = 'difference.fun';
         }
         if (!property_exists($options, 'refresh')) {
             $options->refresh = (object)[];
@@ -265,7 +265,7 @@ trait Main
                 //create private key
                 //create certificate
                 $command = Core::binary($object) .
-                    ' r3m_io/basic' .
+                    ' difference_fun/basic' .
                     ' openssl' .
                     ' init' .
                     ' -keyout=' . 'RefreshToken_key.pem' .
@@ -298,7 +298,7 @@ trait Main
             $options->refresh->token->expires_at = '+48 hours';
         }
         if (!property_exists($options->refresh->token, 'issued_by')) {
-            $options->refresh->token->issued_by = 'R3m.io';
+            $options->refresh->token->issued_by = 'difference.fun';
         }
         File::write($url_jwt, Core::object($options, Core::OBJECT_JSON));
     }
@@ -538,7 +538,7 @@ trait Main
                             if (property_exists($options, 'force')) {
                                 $output = [];
                                 $command = Core::binary($object) .
-                                    ' r3m_io/node' .
+                                    ' difference_fun/node' .
                                     ' put' .
                                     ' -class=Account.Role' .
                                     ' -uuid=' . $record['node']->uuid .
@@ -556,7 +556,7 @@ trait Main
                             } elseif (property_exists($options, 'patch')) {
                                 $output = [];
                                 $command = Core::binary($object) .
-                                    ' r3m_io/node' .
+                                    ' difference_fun/node' .
                                     ' patch' .
                                     ' -class=Account.Role' .
                                     ' -uuid=' . $record['node']->uuid .
@@ -578,7 +578,7 @@ trait Main
                     } else {
                         $output = [];
                         $command = Core::binary($object) .
-                            ' r3m_io/node' .
+                            ' difference_fun/node' .
                             ' create' .
                             ' -class=Account.Role' .
                             ' -name=' . $roles_role['name'] .
@@ -637,7 +637,7 @@ trait Main
             //create private key
             if (!File::exist($object->config('project.dir.data') . 'Ssl/Token_key.pem')) {
                 $command = Core::binary($object) .
-                    ' r3m_io/basic' .
+                    ' difference_fun/basic' .
                     ' openssl' .
                     ' init' .
                     ' -keyout=' . 'Token_key.pem' .
@@ -671,7 +671,7 @@ trait Main
             $options->token->expires_at = '+9 hours';
         }
         if (!property_exists($options->token, 'issued_by')) {
-            $options->token->issued_by = 'R3m.io';
+            $options->token->issued_by = 'difference.fun';
         }
         if (!property_exists($options, 'refresh')) {
             $options->refresh = (object)[];
@@ -682,7 +682,7 @@ trait Main
             //create private key
             if (!File::exist($object->config('project.dir.data') . 'Ssl/RefreshToken_key.pem')) {
                 $command = Core::binary($object) .
-                    ' r3m_io/basic' .
+                    ' difference_fun/basic' .
                     ' openssl' .
                     ' init' .
                     ' -keyout=' . 'RefreshToken_key.pem' .
@@ -716,7 +716,7 @@ trait Main
             $options->refresh->token->expires_at = '+48 hours';
         }
         if (!property_exists($options->refresh->token, 'issued_by')) {
-            $options->refresh->token->issued_by = 'R3m.io';
+            $options->refresh->token->issued_by = 'difference.fun';
         }
         File::write($url_jwt, Core::object($options, Core::OBJECT_JSON));
     }
@@ -742,9 +742,9 @@ trait Main
         $parse = $this->parse();
 //        $parse->storage('options', $options);
         $dir_data = $object->config('project.dir.package') .
-            'R3m' .
+            'Difference' .
             $object->config('ds') .
-            'Io' .
+            'Fun' .
             $object->config('ds') .
             'Account' .
             $object->config('ds') .
@@ -753,9 +753,9 @@ trait Main
             'Json' .
             $object->config('ds');
         $dir_template = $object->config('project.dir.package') .
-            'R3m' .
+            'Difference' .
             $object->config('ds') .
-            'Io' .
+            'Fun' .
             $object->config('ds') .
             'Account' .
             $object->config('ds') .

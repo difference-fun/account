@@ -14,7 +14,7 @@
 'test1' =>  (object) [
 'test2' + 'test7' => object.clone($test2), // with  comment
 'test2' + 'test9' => (clone) $test2,
-'test3' => $r3m.io.parse.compile.url,
+'test3' => $difference.fun.parse.compile.url,
 'test7' => [
 0,
 1
