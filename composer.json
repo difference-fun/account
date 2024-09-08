@@ -1,0 +1,17 @@
+{
+    "name" : "difference_fun/account",
+    "description" : "difference_fun/account see https://difference.fun for detailed usage",
+    "type" : "library",
+    "keywords" : ["node", "difference", "fun", "library", "framework", "account", "difference.fun"],
+    "homepage": "https://difference.fun",
+    "require" : {
+        "difference_fun/framework": "*",
+        "lcobucci/jwt": "*",
+        "lcobucci/clock": "*"
+    },
+    "license" : "MIT",
+    "authors" : [{
+        "name" : "Remco van der Velde",
+        "email" : "development@universeorange.com"
+    }]
+}
